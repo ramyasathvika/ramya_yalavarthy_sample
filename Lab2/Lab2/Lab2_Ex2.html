@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <p>Below, enter your full street address, including your city, state and zip code.</p>
+        <input id="address" type="text" placeholder="Enter your full address" size="40" />
+        <p>Choose a Census Bureau address data source:</p>
+        <select id="benchmark">
+            <option value="">Loading...</option>
+        </select>
+        <input id="submit_address" type="button" value="Submit" />
+        <br><br>
+
+        <input id="clear_button" type="button" value="clear"  />
+        <div id="results" hidden>
+            <p> Matched Address: <span id="matched_address"></span> </p>
+            <p>Latitude: <span id="latitude"></span> Longitude: <span id="longitude"></span> </p>
+            <div id="map_content"></div>
+        </div>
+        <script type="text/javascript" src="Lab2_Ex2.js"> </script>
+    </body>
+</html>
